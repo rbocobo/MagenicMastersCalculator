@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:padding="26dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/defaultValTextView"
+            android:id="@+id/resultTextView"
+            android:gravity="center_vertical"
+            android:editable="false"
+            android:fontFamily="sans-serif-thin"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_text"
+            android:id="@+id/clearButton"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="41dp"
+            android:fontFamily="sans-serif-thin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calcbutton_title"
+            android:id="@+id/calcButton"
+            android:layout_alignTop="@+id/clearButton"
+            android:layout_toRightOf="@+id/clearButton"
+            android:enabled="true"
+            android:visibility="@string/visibility"
+            android:fontFamily="sans-serif-thin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonReadData"
+            android:layout_below="@+id/clearButton"
+            android:layout_alignLeft="@+id/clearButton"
+            android:layout_alignStart="@+id/clearButton"
+            android:layout_alignRight="@+id/calcButton"
+            android:layout_alignEnd="@+id/calcButton"
+            android:text="@string/text_read_data"
+            android:fontFamily="sans-serif-thin"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

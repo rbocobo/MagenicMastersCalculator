@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.magenicmasters.calculator.ReadDataActivity" >
+    
+    <item android:id="@+id/action_return"
+        android:title="@string/action_return"
+        android:orderInCategory="100"
+        app:showAsAction="always|withText"
+        android:icon="@drawable/ic_action_back"/>
+</menu>
